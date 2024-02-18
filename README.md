@@ -14,3 +14,13 @@
    -> Linear Sieve
    -> Segmented Sieve
    -> Prime Number in range [l to r]
+# Sorting Algorithms
+ -> Bubble Sort
+ -> Selection Sort
+ -> Insertion Sort
+ -> Heap Sort
+ -> Quick Sort
+ -> Merge Sort
+ -> Radix Sort
+ -> Counting Sort
+ 
