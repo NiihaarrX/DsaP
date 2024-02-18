@@ -36,5 +36,3 @@ int main() {
     else cout << "Not Bipartite Graph" << endl;
     return 0;
 }
-// 1 2 3
-// 4 5
