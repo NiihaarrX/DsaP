@@ -8,3 +8,5 @@
 # Number Theory
  -> GCD
  -> Binary Search
+ # Prime Theory
+   -> Sieve_01 (Normal Sieveing) 
