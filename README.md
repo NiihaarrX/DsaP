@@ -3,8 +3,8 @@
 This repository contains implementations of various algorithms and data structures for competitive programming and problem-solving practice.
 
 ## Backtracking
-- [NQueen](Backtracking/NQueen.cpp)
-- [Sum of Subset](Backtracking/SumOfSubset.cpp)
+- [NQueen](BackTracking/NQueen.cpp)
+- [Sum of Subset](BackTracking/SOS.cpp)
 
 ## Graph Algorithms
 - [Breadth-First Search (BFS)](Graph/BFS.cpp)
