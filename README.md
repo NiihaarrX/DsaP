@@ -9,6 +9,7 @@
 - [Breadth-First Search (BFS)](Graph/BFS.cpp)
 - [Depth-First Search (DFS)](Graph/DFS.cpp)
 - [Topological Sort (BFS - Kahn's Algorithm)](Graph/TopoBfs.cpp)
+- [Check if Graph is Bipartite or Not (BFS)](Graph/BipartiteCheckBfs.cpp)
 
 ## Number Theory
 - [Greatest Common Divisor (GCD)](NumberTheory/GCD.cpp)
