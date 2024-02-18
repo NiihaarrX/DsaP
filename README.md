@@ -1,6 +1,6 @@
 # BackTracking
- -> NQueen
- -> Sum of Subset
+ -> NQueen <br/>
+ -> Sum of Subset <br/>
 # Graph
   -> BFS <br/>
   -> DFS <br/>
