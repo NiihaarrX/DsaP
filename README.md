@@ -9,14 +9,14 @@ This repository contains implementations of various algorithms and data structur
 ## Graph Algorithms
 - [Breadth-First Search (BFS)](Graph/BFS.cpp)
 - [Depth-First Search (DFS)](Graph/DFS.cpp)
-- [Topological Sort (BFS - Kahn's Algorithm)](Graph/TopologicalSort.cpp)
+- [Topological Sort (BFS - Kahn's Algorithm)](Graph/TopoBfs.cpp)
 
 ## Number Theory
 - [Greatest Common Divisor (GCD)](NumberTheory/GCD.cpp)
 - [Binary Search](NumberTheory/BinarySearch.cpp)
 
 ## Prime Number Theory
-- [Sieve of Eratosthenes (Normal Sieving)](PrimeTheory/Sieve01.cpp)
+- [Sieve of Eratosthenes (Normal Sieving)](Number Theory/PrimeTheory/Sieve01.cpp)
 - [Sieve of Eratosthenes (Sieveing till root only)](PrimeTheory/Sieve02.cpp)
 - [Linear Sieve](PrimeTheory/LinearSieve.cpp)
 - [Segmented Sieve](PrimeTheory/SegmentedSieve.cpp)
