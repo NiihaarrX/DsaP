@@ -12,4 +12,5 @@
    -> Sieve_01 (Normal Sieveing)
    -> Sieve_01 (Sieveing till root only)
    -> Linear Sieve
-   
+   -> Segmented Sieve
+   -> Prime Number in range [l to r]
