@@ -2,8 +2,8 @@
  -> NQueen
  -> Sum of Subset
 # Graph
-  -> BFS
-  -> DFS
+  -> BFS <br/>
+  -> DFS <br/>
   -> Topological Sort(BFS - Kahn's Algorithm)
 # Number Theory
  -> GCD
