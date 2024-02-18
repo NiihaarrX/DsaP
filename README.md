@@ -16,7 +16,7 @@ This repository contains implementations of various algorithms and data structur
 - [Binary Search](NumberTheory/BinarySearch.cpp)
 
 ## Prime Number Theory
-- [Sieve of Eratosthenes (Normal Sieving)](Number Theory/PrimeTheory/Sieve01.cpp)
+- [Sieve of Eratosthenes (Normal Sieving)](Number/PrimeTheory/Sieve01.cpp)
 - [Sieve of Eratosthenes (Sieveing till root only)](PrimeTheory/Sieve02.cpp)
 - [Linear Sieve](PrimeTheory/LinearSieve.cpp)
 - [Segmented Sieve](PrimeTheory/SegmentedSieve.cpp)
