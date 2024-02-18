@@ -3,6 +3,7 @@
 ## Backtracking
 - [NQueen](BackTracking/NQueen.cpp)
 - [Sum of Subset](BackTracking/SOS.cpp)
+- [Sudoku Solver](BackTracking/Sudoku.cpp)
 
 ## Graph Algorithms
 - [Breadth-First Search (BFS)](Graph/BFS.cpp)
