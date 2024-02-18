@@ -15,7 +15,7 @@ This repository contains implementations of various algorithms and data structur
 - [Greatest Common Divisor (GCD)](NumberTheory/GCD.cpp)
 - [Binary Search](NumberTheory/BinarySearch.cpp)
 
-## Prime Number Theory
+### Prime Number Theory
 - [Sieve of Eratosthenes (Normal Sieving)](NumberTheory/PrimeTheory/Sieve_01.cpp)
 - [Sieve of Eratosthenes (Sieveing till root only)](NumberTheory/PrimeTheory/Sieve_02.cpp)
 - [Linear Sieve](NumberTheory/PrimeTheory/LinearSieve.cpp)
