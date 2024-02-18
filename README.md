@@ -1,7 +1,5 @@
 # Algorithms and Data Structures
 
-This repository contains implementations of various algorithms and data structures for competitive programming and problem-solving practice.
-
 ## Backtracking
 - [NQueen](BackTracking/NQueen.cpp)
 - [Sum of Subset](BackTracking/SOS.cpp)
