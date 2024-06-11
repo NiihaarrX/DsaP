@@ -1,45 +1,43 @@
-//Also Known as Kahns algorithm
-
-
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <queue>
 
 using namespace std;
 
-vector<int> TopoSortBfs(vector<vector<int>> &G,vector<int> &indegree) {
-        queue<int> q;
-        vector<int> ans;
-        int n = indegree.size();
-        for(int i = 0; i < n;i++) {
-            if(indegree[i] == 0) q.push(i);
-        }
-        while(!q.empty()) {
-            int temp = q.front();
-            ans.push_back(temp);
-            q.pop();
-            for(int i = 0; i < G[temp].size();i++) {
-                indegree[G[temp][i]]--;
-                if(indegree[G[temp][i]] == 0) {
-                    q.push(G[temp][i]);
-                }
-            }
-        }
-        return ans;
-    }
+//Kahn's Algorithm
 
-    int main() {
-        int V,E;
-        cin >> V >> E;
-        vector<vector<int>> G(V);
-        vector<int> indegree(V,0);
-        for(int i = 0; i < E;i++) {
-            int a,b;
-            cin >> a >> b;
-            G[a].push_back(b);
-            indegree[b]++;
-        }
-        vector<int> TopoSort = TopoSortBfs(G,indegree);
-        if(TopoSort.size() != V) cout << "TopoSort Not Possible" << endl;
-        else for (int i = 0; i < TopoSort.size(); i++) cout << TopoSort[i] << " ";
-        cout << endl;
-        return 0;
+
+void topo_bfs(vector<vector<int>> &g) {
+  vector<int> indegree(g.size());
+  queue<int> q;
+  for(int i = 0;i < g.size();i++) for(auto j : g[i]) indegree[j]++;
+  for(int i = 0;i < g.size();i++) if(!indegree[i]) q.push(i);
+  while(!q.empty()) {
+    int temp = q.front();
+    cout << temp << " ";
+    q.pop();
+    for(int &i : g[temp]) {
+      indegree[i]--;
+      if(!indegree[i]) q.push(i);
     }
+  }
+}
+
+int main() {
+  int vertices = 9;
+  // int edges = 8;
+  vector<vector<int>> g(vertices);
+  g[0] = {1, 2};
+  g[1] = {3,6};
+  g[2] = {4};
+  g[3] = {7};
+  g[4] = {};
+  g[5] = {};
+  g[6] = {8};
+  g[7] = {};
+  g[8] = {5};
+  // int start = 0;
+  vector<bool> vis(g.size(),false);
+  topo_bfs(g);
+  
+}
