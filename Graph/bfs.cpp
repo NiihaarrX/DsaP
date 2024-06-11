@@ -1,25 +1,41 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <queue>
 
 using namespace std;
 
-
-void BFS(int V,int E,vector<vector<int>> &G,int start) {
-    queue<int> q;
-    vector<bool> vis(V,false);
-    q.push(start);
-    vis[start] = true;
-    while(!q.empty()) {
-        int temp = q.front();
-        q.pop();
-        cout << temp << " ";
-
-        for(int i = 0; i < G[temp].size();i++) {
-            if(!vis[G[temp][i]]) {
-                q.push(G[temp][i]);
-                vis[G[temp][i]] = true;
-            }
-        }
+void bfs(vector<vector<int>> &g,int edges,int src) {
+  vector<bool> vis(g.size(),false);
+  queue<int> q;
+  q.push(src);
+  vis[src] = true;
+  while (!q.empty()) {
+    int top = q.front();
+    q.pop();
+    cout << top << " ";
+    for(auto i : g[top]) {
+      if(!vis[i]) q.push(i);
+      vis[i] = true;
     }
+  }
+}
+
+int main() {
+  int vertices = 9;
+  int edges = 10;
+  vector<vector<int>> g(vertices);
+  g[0] = {1, 2};
+  g[1] = {0,3,6};
+  g[2] = {0,4};
+  g[3] = {1,7};
+  g[4] = {2,5,7};
+  g[5] = {4,8};
+  g[6] = {1,8};
+  g[7] = {3,4};
+  g[8] = {5,6};
+  int start = 0;
+  bfs(g,edges,start);
+  
 }
 int main() {
     int V,E,start;
