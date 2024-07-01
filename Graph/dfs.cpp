@@ -4,6 +4,9 @@
 
 using namespace std;
 
+ // Time Complexity: O(V + E)
+  // Space Complexity: O(V)
+
 void dfs(vector<vector<int>> &g,int src,vector<bool> &vis) {
   cout << src << " ";
   vis[src] = true;
