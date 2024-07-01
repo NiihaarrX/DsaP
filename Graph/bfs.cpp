@@ -4,6 +4,9 @@
 
 using namespace std;
 
+// Time Complexity: O(V + E) using adjacency list
+// Time Complexity: O(V^2) using adjacency matrix
+
 void bfs(vector<vector<int>> &g,int edges,int src) {
   vector<bool> vis(g.size(),false);
   queue<int> q;
